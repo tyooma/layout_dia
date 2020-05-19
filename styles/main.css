@@ -5,7 +5,7 @@
   font-weight: 600;
   color: #253757; }
 
-.header__hire, .nav__link, .process__subtitle, .approach__subtitle, .testimonials__subtitle, .people__company, .footer__subtitle {
+.header__hire, .nav__link, .process__subtitle, .approach__subtitle, .testimonials__subtitle, .people__company, .footer__subtitle, .slider__title {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -14,7 +14,7 @@
   text-transform: uppercase;
   text-decoration: none; }
 
-.content__description, .services__text, .process__text, .approach__text {
+.content__description, .services__text, .process__text, .approach__text, .slider__text {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -69,7 +69,7 @@ textarea {
 
 .header {
   position: relative;
-  padding: 48px 228px;
+  padding: 48px 0 0 228px;
   height: 800px;
   width: 100%;
   border-bottom-left-radius: 200px;
@@ -874,6 +874,60 @@ textarea {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
+
+.slider {
+  margin-top: 35px;
+  position: relative;
+  width: 687px;
+  height: 680px;
+  border-top-left-radius: 200px;
+  overflow: hidden; }
+  .slider__image {
+    width: 687px;
+    height: 680px;
+    position: absolute;
+    -webkit-transition: all ease 1s;
+    transition: all ease 1s;
+    left: 0;
+    top: 0; }
+  .slider__menu {
+    margin: 564px 0 0 48px;
+    position: absolute;
+    z-index: 1;
+    width: 264px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .slider__title {
+    margin: 0 0 8px;
+    line-height: 19px;
+    color: #fff; }
+  .slider__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 140%;
+    color: #fff; }
+  .slider__block_button {
+    margin-right: 24px;
+    padding-top: 18px; }
+  .slider__button {
+    width: 32px;
+    height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    border-radius: 50%; }
+  .slider__arrow {
+    width: 6px;
+    height: 8px;
+    background: url(../images/slider/arrow-left.svg) no-repeat center;
+    background-size: contain; }
 
 * {
   -webkit-box-sizing: border-box;
