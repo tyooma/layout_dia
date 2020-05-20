@@ -269,6 +269,13 @@ textarea {
     border-bottom-left-radius: 200px;
     -webkit-transform: translateY(-25px);
             transform: translateY(-25px); }
+    @media (min-width: 1600px) {
+      .section_orange {
+        border-top-right-radius: 200px; } }
+  .section__wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1620px; }
 
 .info {
   padding: 148px 0;
@@ -491,36 +498,44 @@ textarea {
   .card_fourth {
     top: 442px;
     right: 227px; }
-
-@media screen and (max-width: 1060px) {
-  .card {
-    margin: 0 auto 40px;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .card_first {
-      top: 0;
-      right: 0; }
-    .card_second {
-      top: 0;
-      right: 0; }
-    .card_third {
-      top: 0;
-      right: 0; }
-    .card_fourth {
-      top: 0;
-      right: 0; } }
+  @media (max-width: 1060px) {
+    .card {
+      margin: 0 auto 40px;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .card_first {
+        top: 0;
+        right: 0; }
+      .card_second {
+        top: 0;
+        right: 0; }
+      .card_third {
+        top: 0;
+        right: 0; }
+      .card_fourth {
+        top: 0;
+        right: 0; } }
 
 .approach {
   margin-left: 204px;
   padding: 204px 0;
   max-width: 362px;
   color: #fff; }
+  @media (max-width: 1360px) {
+    .approach {
+      margin-left: 80px; } }
+  @media (max-width: 1160px) {
+    .approach {
+      padding: 120px 0;
+      margin-left: 10px; }
+      .approach__image {
+        display: none; } }
   .approach__subtitle {
     margin: 0 0 16px;
     line-height: 19px; }
@@ -567,17 +582,6 @@ textarea {
     -o-object-position: center;
        object-position: center;
     border-top-left-radius: 200px; }
-
-@media screen and (max-width: 1360px) {
-  .approach {
-    margin-left: 80px; } }
-
-@media screen and (max-width: 1160px) {
-  .approach {
-    padding: 120px 0;
-    margin-left: 10px; }
-    .approach__image {
-      display: none; } }
 
 .testimonials {
   margin: 0 auto;
@@ -1171,7 +1175,9 @@ body {
   background: #f2f9ff; }
 
 .container {
-  padding-left: 121px; }
+  margin: 0 auto;
+  padding-left: 121px;
+  max-width: 1600px; }
 
 @media screen and (max-width: 560px) {
   .container {
