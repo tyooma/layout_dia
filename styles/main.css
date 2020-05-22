@@ -115,7 +115,7 @@ textarea {
       display: none; } }
 
 .logo {
-  width: 46px;
+  min-width: 46px;
   height: 28px;
   margin-right: 78px;
   margin-left: 227px;
